@@ -24,12 +24,13 @@ let confirm = function () {
              ) {
                 part2.style.display = "none"
                 part3.style.display = "block"
-                inputs[i].value = '';
             }
+            inputs[i].value = '';
+            console.log(i)
         }
     }
 }
-// let Continue =function ( ) {
-//     part2.style.display = "block"
-//     part3.style.display = "none"
-// }
+let Continue =function ( ) {
+    part2.style.display = "grid"
+    part3.style.display = "none"
+}
