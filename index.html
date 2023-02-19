@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/index.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet  -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="part1">
+      <div class="card1">
+        <div class="icon">
+          <img src="images/card-logo.svg" alt="">
+        </div>
+        <div class="text">
+          <p id="cardNumber">0000 0000 0000 0000</p>
+          <p id="cardName">Jane Appleseed</p>
+          <p id="cardDate"><i id="cardDay">00</i>/<i id="cardMonth">00</i></p>
+        </div>
+      </div>
+      <div class="card2">
+        <h6 id="cardCvc">000</h6>
+      </div>
+    </div>
+    <div class="part2" id="part2">
+          <label for="name">cardholder name</label>
+          <input type="text" name="" placeholder="e.g. Jane Appleseed" id="name">
+          <span class="wrongName wrong">wrong format, words only</span>
+        <label for="num">Card Number</label>
+        <input type="text" name="" placeholder="e.g. 1234 5678 9123 0000" id="num">
+        <span class="wrongNumber wrong">wrong format, numbers only</span>
+      
+        <div class="labels">
+          <label for="month">Exp. Date (MM/YY)</label>
+          <label for="cvc">cvc</label>
+        </div>
+        <div class="date">
+          <input type="text" placeholder="MM">
+          <span class="wrongMonth wrong">can't be blank</span>
+          <input type="text" name="" id="week" placeholder="YY">
+          <span class="wrongYear wrong">can't be blank</span>
+          <input type="text" placeholder="e.g. 123" id="cvc">
+          <span class="wrongCvc wrong">can't be blank</span>
+        </div>
+        <input type="submit" onclick="confirm()" value="confirm">
+    </div>
+    <div class="part3" id="part3">
+        <img src="images/icon-complete.svg" alt="">
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <input type="submit" onclick="Continue()" value="continue">
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/mohamedibrahim5776">mohamed ibrahim</a>.
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>
